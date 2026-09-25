@@ -389,7 +389,8 @@ local function createToggle(name, defaultState, callback, keyGetter)
 		end,
 		Name = name,
 	}
-endlocal function createSlider(name, min, max, default, callback)
+end
+	local function createSlider(name, min, max, default, callback)
 	local container = Instance.new("Frame")
 	container.Size = UDim2.new(1, 0, 0, 72)
 	container.BackgroundColor3 = Theme.Panel
