@@ -390,7 +390,8 @@ local function createToggle(name, defaultState, callback, keyGetter)
 		Name = name,
 	}
 end
-	local function createSlider(name, min, max, default, callback)
+
+local function createSlider(name, min, max, default, callback)
 	local container = Instance.new("Frame")
 	container.Size = UDim2.new(1, 0, 0, 72)
 	container.BackgroundColor3 = Theme.Panel
@@ -870,3 +871,4 @@ ScreenGui.Destroying:Connect(function()
 end)
 
 print("[KRIEG v5] Loaded successfully!")
+
